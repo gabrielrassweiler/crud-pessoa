@@ -27,7 +27,7 @@
                     <td><?=$row['id']?></td>
                     <td><?=$row['nome']?></td>
                     <td>
-                        <a href="?modulo=pessoas&pagina=alterar&id=<?=$row['id']?>">Alterar</a>
+                        <a href="?modulo=pessoas&pagina=alterar&id=<?=$row['id']?>">Alterar</a> |
                         <a href="?modulo=pessoas&pagina=deletar&id=<?=$row['id']?>">Excluir</a>
                     </td>
                 </tr>

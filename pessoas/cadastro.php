@@ -1,11 +1,8 @@
 <?php
     if (isset($_POST['gravar'])) {
         try {
-            $stmt = $conn->prepare(
-                'INSERT INTO pessoas (nome) values (:nome)');
-            //$stmt->bindParam(':id', $id, PDO::PARAM_INT);
+            $stmt = $conn->prepare('INSERT INTO pessoas (nome) values (:nome)');
             $stmt->execute(array('nome' => $_POST['nome']));
-            //$stmt->execute();
         } catch(PDOException $e) {
             echo 'ERROR: ' . $e->getMessage();
         }
