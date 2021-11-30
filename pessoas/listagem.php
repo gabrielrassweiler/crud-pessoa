@@ -9,13 +9,7 @@
         } else {
             $stmt = $conn->prepare('SELECT * FROM pessoas');
         }
-        //$stmt->execute(array('id' => $id));
         $stmt->execute();
-   
-        //while($row = $stmt->fetch()) {
-        //while($row = $stmt->fetch(PDO::FETCH_OBJ)) {
-            //print_r($row);
-        //}
  
         $result = $stmt->fetchAll();
 ?>
@@ -34,7 +28,7 @@
                     <td><?=$row['nome']?></td>
                     <td>
                         <a href="?modulo=pessoas&pagina=alterar&id=<?=$row['id']?>">Alterar</a>
-                        <a href="?modulo=pessoas&pagina=deletar&id=<?=$row['id']?>">Excluír</a>
+                        <a href="?modulo=pessoas&pagina=deletar&id=<?=$row['id']?>">Excluir</a>
                     </td>
                 </tr>
                 <?php
