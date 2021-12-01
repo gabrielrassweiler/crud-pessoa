@@ -4,6 +4,7 @@
     define('LAYOUTS', dirname(__DIR__)."/layouts/");
     define('CADASTROS', dirname(__DIR__)."/");
     define('PESSOAS', dirname(__DIR__)."/cadastros/pessoas/");
+    define('LOGIN', dirname(__DIR__)."/login/");
  
     define('DB_SERVER','localhost');
     define('DB_USER','root');
